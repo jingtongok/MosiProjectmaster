@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#333333</color>
+
+    <color name="col_333333">#333333</color>
+
+    <color name="col_ffffff">#ffffff</color>
+
+    <color name="col_4CAF50">#4CAF50</color>
+
+    <color name="col_88000000">#33000000</color>
+
+</resources>

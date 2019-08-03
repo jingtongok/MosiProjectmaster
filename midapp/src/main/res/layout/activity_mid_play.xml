@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mid_paly_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/col_333333">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mid_paly_toolbar"
+        android:orientation="vertical">
+
+        <yin.source.com.midimusicbook.midi.musicBook.MusicBook
+            android:id="@+id/sheet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="7" />
+
+        <yin.source.com.midimusicbook.midi.musicBook.Piano
+            android:id="@+id/piano"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="#ff000000"
+                android:text="删除"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_rewind"
+                style="@style/MidiPlayerButton"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_play"
+                android:background="@drawable/rewind"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_play"
+                style="@style/MidiPlayerButton"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:background="@drawable/play" />
+
+            <Button
+                android:id="@+id/btn_fast_forward"
+                style="@style/MidiPlayerButton"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_play"
+                android:background="@drawable/fastforward"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_volume_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="#ff000000"
+                android:text="音速"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

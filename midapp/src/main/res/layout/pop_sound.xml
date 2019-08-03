@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/dp_40"
+    android:paddingTop="@dimen/dp_60"
+    android:paddingRight="@dimen/dp_40"
+    android:paddingBottom="@dimen/dp_60">
+
+    <TextView
+        android:id="@+id/sound_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="—0.5—"
+        android:textColor="@color/col_ffffff" />
+
+    <TextView
+        android:id="@+id/sound_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="—0.8—"
+        android:textColor="@color/col_ffffff" />
+
+    <TextView
+        android:id="@+id/sound_03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="—1.0—"
+        android:textColor="@color/col_ffffff" />
+
+    <TextView
+        android:id="@+id/sound_04"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="—1.5—"
+        android:textColor="@color/col_ffffff" />
+
+</LinearLayout>
